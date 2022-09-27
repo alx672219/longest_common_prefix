@@ -4,7 +4,7 @@ def longestCommonPrefix(self, strs: List[str]) -> str:
         prefix = ""
         
         strs.sort()   # because of this, I only need to check the first and last one.
-        for x, y in zip(strs[0], strs[-1]):   # iterate paired items
+        for x, y in zip(strs[0], strs[-1]):   # zip() iterate paired items
             if x == y:
                 prefix +=x
             else: 
